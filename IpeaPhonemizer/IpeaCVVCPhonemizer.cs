@@ -9,9 +9,6 @@ namespace IpeaPhonemizer
     public class IpeaCVVCPhonemizer : SyllableBasedPhonemizer
     {
         private readonly string[] vowels = { "a", "e", "i", "o", "u", "E", "O", "6", "am", "em", "im", "om", "um", "Ao" };
-        /*private readonly string[] burstConsonants = { "b", "tch", "d", "dj", "g", "k", "p", "t" };
-        private readonly string[] shortConsonants = { "r", "rr" };
-        private readonly string[] longConsonants = { "s", "ch" };*/
         protected override List<string> ProcessSyllable(Syllable syllable)
         {
             var phonemes = new List<string>();
